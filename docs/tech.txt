@@ -1,0 +1,39 @@
+Client:			Web stack (HTML5+JS+CSS)
+
+Server env:		NodeJS
+Web server:		ExpressJS (file server + API endpoint)
+Database:		MongoDB (via Mongoose)
+
+Server host:	DigitalOcean (Linux)
+
+========== WEB REQUIREMENTS ==========
+
+Web pages:
+	Home
+	Login
+	Registration
+	Chat screen
+
+API endpoints:
+	POST	/login
+	POST	/register
+
+Authentication:
+	SHA256 password hashing
+	JSON Web Token
+
+========== DATABASE MODELS ==========
+
+User: {
+	username
+	nickname
+	profilePicture
+	passwordHash
+}
+
+Message: {
+	from
+	to
+	message
+	date
+}

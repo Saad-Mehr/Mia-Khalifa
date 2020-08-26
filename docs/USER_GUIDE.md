@@ -1,0 +1,6 @@
+# User Guide:
+* From the homepage “pigeon-chat.org” click register to register for an account. Set up a user ID and password to be passed to the database for security as well as a screen name to share with other users.
+* Once the registration process is complete, log in using your credentials (User ID and password) on the log in page.
+* After you have successfully logged in to Pigeon Chat, you can start conversations with other users. This is done by clicking on the “+” icon on the left side of the screen. In the popup window, search for another user to begin a new chat with them. Chats will also open when another user uses this process to begin a chat with you.
+* New chats will appear on the left of the page as they are opened. You can switch between chatrooms by clicking on a different name on the left side of the chat page. This will redirect you to a separate chat with the selected user. Chats are stored on the server so your chat history will not be lost upon switching rooms.
+* Keep in mind that chat rooms are only set up to be used “one-to-one” and communication between three or more users has not been implemented at the time of this demo. The sending of files has also not been implemented at this time. 

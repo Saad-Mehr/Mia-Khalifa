@@ -1,0 +1,6 @@
+Color Palette
+#37392E button color
+#E9EBF8
+#B4B8C5
+#2C4251 box color/input background
+#19647E page background
