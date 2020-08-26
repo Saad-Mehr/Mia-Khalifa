@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Register</title>
+    <style type="text/css">
+@import url("styles/register_style.css");
+    </style>
+    <script src="./api.js"></script>
+  </head>
+	<div class="header" id="header">
+	PIGEON CHAT
+	</div>
+<body>
+<script>
+      async function submitRegister(){
+        const nickname = document.getElementById('nickname').value;
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+		  const password_confirm = document.getElementById('password_confirm').value;
+        try {
+
+          const res = await register(username, password, nickname);
+          if(res.error)
+            throw Error(res.error);
+
+          alert('Success! Please log in...');
+          window.location = '/login';
+        } catch(err) {
+          console.error(err);
+          alert(`Error: ${err.message}`);
+        }
+      }
+    </script>
+	<div class="register-background">
+<main class="register-main" id="register-main">
+  <div class="register-container" id="register_login">
+        <div class="register-container" id="index_login">
+          Register Here!<br>
+          Nickname:
+          <input id="nickname" type="text" name="Email"><br>
+          Username:
+          <input id="username" type="text" name="Email"><br>
+          Password:
+          <input id="password" type="password" name="Password"><br>
+		  Confirm Password:
+			<input id="password_confirm" type="password" name="Password_Confirm"><br>
+          <input name="Register" type="button" class="select_button" value="Register" onclick="submitRegister()"><br>
+        </div>
+      </div>
+  </main>
+</div>
+</body>
+</html>

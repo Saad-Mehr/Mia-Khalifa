@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Pigeon Chat</title>
+    <link href="styles/loader.css" rel="stylesheet" type="text/css">
+    <link href="styles/fonts.css" rel="stylesheet" type="text/css">
+    <link href="styles/chat.css" rel="stylesheet" type="text/css">
+    <script src="scripts/api-login.js"></script>
+    <script src="scripts/api-convo.js"></script>
+    <script src="scripts/api-util.js"></script>
+    <script src="scripts/init.js"></script>
+    <script src="scripts/handlers.js"></script>
+  </head>
+  <body>
+    <div class="overlay" id="error-overlay">
+      <div class="modal error-modal">
+        <span id="error-message"></span>
+        <button id="error-confirm" onclick="closeError()">OK</button>
+      </div>
+    </div>
+    <div class="overlay" id="user-search-overlay">
+      <div class="modal user-search-prompt">
+        <input id="user-search-input" class="input-box" placeholder="Search users ..."></input>
+        <div id="user-search-results">
+        </div>
+      </div>
+    </div>
+    <div id="main-container">
+      <div id="side-bar">
+        <div id="conversations"></div>
+        <div class="convo-create-container">
+          <div onclick="openUserSearch()" id="convo-create">+</div>
+        </div>
+      </div>
+      <div id="chat-container">
+        <div id="title-bar">‏‏‎ ‎</div>
+        <div id="message-container"></div>
+        <input class="input-box" id="message-input" placeholder="Enter message..."></input>
+      </div>
+    </div>
+  </body>
+</html>

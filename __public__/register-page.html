@@ -1,0 +1,127 @@
+<!-- <form action="action_page.php"> --> 
+<!DOCTYPE html>
+<html>
+<body bgcolor="#19647E"> 
+  <div class="container">
+  
+    <h1><font color="white">Register</font></h1>
+    <p><font color="white">Welcome to Pigeon Chat!</font></p>
+    <p><font color="white">Please fill in this form to create an account.</font></p>
+    
+    <hr>
+    <p></p>
+    <label for="userName"><b><font color="white">User Name</font></b></label>
+    <input type="text" placeholder="Enter User Name" name="userName" required>
+    <p></p>
+
+    <label for="psw"><b><font color="white">Password</font></b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b><font color="white">Repeat Password</font></b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    <p></p>
+    
+    <label for="nickname"><b><font color="white">Nickname</font></b></label>
+    <input type="text" placeholder="Enter Nickname" name="nickname" required>
+    
+    <h><font color="white">(This will be your display name)</font></h>
+    
+    <p></p>
+    
+    <label for="securityQ"><b><font color="white">Choose a</font></b></label>
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    .dropbtn {
+        background-color: #37392E; /* #3498DB */
+        color: white;
+        padding: 7px;
+        font-size: 14px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropbtn:hover, .dropbtn:focus {
+        background-color: #2C4251;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #2C4251;
+        min-width: 280px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown a:hover {
+        background-color: #ddd;
+    }
+
+    .show {display: block;}
+    </style>
+
+
+    <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Security question</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="#q_1">1. What was your first pet's name?</a>
+      <a href="#q_2">2. What is your most visited website?</a>
+      <a href="#q_3">3. What is your guilty pleasure song?</a>
+      <a href="#q_4">4. Who was your first crush?</a>
+      <a href="#q_5">5. Which movie made you cry?</a>
+      </div>
+    </div>
+
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+    </script>
+
+    <label for="secAnswer"><b><font color="white">Answer</font></b></label>
+    <input type="text" placeholder="Enter Answer" name="secAnswer" required>
+    
+    <p></p>
+    <hr>
+
+    
+    <button type="submit" class="registerbtn">Register</button>
+    </div>
+
+    <div class="container signin">
+    <p><font color="white">Already have an account?</font> <a href="#">Sign in</a>.</p>
+  </div>
+  </body>
+  </html>
+<!-- </form> -->
